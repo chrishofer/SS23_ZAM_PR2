@@ -30,5 +30,21 @@ public class Main {
         hs.addHase(weihnachshase);
 
         hs.hoppelAll();
+
+        // eine kleine Party
+        System.out.println("Party beginnt");
+        ArrayList<GoesToParty> partyPeople = new ArrayList<>();
+        partyPeople.add(oster);
+        partyPeople.add(weihnachshase);
+        partyPeople.add(new Hase("Bernhard"));
+        partyPeople.add(new Igel());
+
+        for(GoesToParty p : partyPeople){
+            p.party("Karottenwasser", "Karottenkuchen");
+        }
+
+
+
+
     }
 }
