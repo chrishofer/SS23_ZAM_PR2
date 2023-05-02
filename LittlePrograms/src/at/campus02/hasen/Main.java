@@ -1,6 +1,8 @@
 package at.campus02.hasen;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -42,6 +44,18 @@ public class Main {
         for(GoesToParty p : partyPeople){
             p.party("Karottenwasser", "Karottenkuchen");
         }
+
+        // comparator (sortieren) test
+        List<Hase> hasenSortieren = new ArrayList<>();
+        hasenSortieren.add(new Hase("Mr. Bunny", 18, 5));
+        hasenSortieren.add(new Hase("Lady Carrot", 15, 200));
+        hasenSortieren.add(new Hase("Sir Hoppel a Lot", 9, 50));
+        hasenSortieren.add(new Hase("Duchess of Carrotonia", 18, 3000000));
+        System.out.println(hasenSortieren);
+        Collections.sort(hasenSortieren);
+        System.out.println(hasenSortieren);
+        Collections.sort(hasenSortieren, new HaseNamenComparator());
+        System.out.println(hasenSortieren);
 
 
 
