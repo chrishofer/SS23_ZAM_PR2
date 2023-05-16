@@ -1,7 +1,12 @@
 package at.campus02.orchester;
 
 public class Orgel extends Instrument {
-    public Orgel( int l) {
+
+    public Orgel(int lautstaerke, double value, String nickName) {
+        super(lautstaerke, value, nickName);
+    }
+
+    public Orgel(int l) {
         super( l);
     }
 

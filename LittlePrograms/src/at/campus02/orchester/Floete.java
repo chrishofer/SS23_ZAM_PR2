@@ -5,6 +5,10 @@ public class Floete extends Instrument {
         super(l);
     }
 
+    public Floete(int lautstaerke, double value, String nickName) {
+        super(lautstaerke, value, nickName);
+    }
+
     @Override
     public int play() {
 

@@ -5,6 +5,10 @@ public class Gitarre extends Instrument{
         super( l);
     }
 
+    public Gitarre(int lautstaerke, double value, String nickName) {
+        super(lautstaerke, value, nickName);
+    }
+
     @Override
     public int play() {
         System.out.println("Gitarre lässt ihre Saiten klingen");
